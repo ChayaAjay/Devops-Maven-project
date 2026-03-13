@@ -1,20 +1,19 @@
 package com.alvas;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
-	public int add(int a, int b)
+	public int fact(int n)
 	{
-		return a+b;
+		if(n==1)
+			return 1;
+		else
+			return (fact(n-1)*n);
 	}
-    public static void main( String[] args )
-    {
-    	App app= new App();
-    	int result=app.add(2, 3);
-    	System.out.println( "2+3"+result);
-        System.out.println( "MAven project is executed");
-    }
+	public static void main( String[] args )
+	{
+		App obj=new App();
+		int res= obj.fact(3);
+		System.out.println("The Result="+res);
+	}
+ 
 }

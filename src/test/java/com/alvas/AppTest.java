@@ -3,15 +3,22 @@ package com.alvas;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AppTest 
+public class AppTest
 {
 	@Test
-	public void testadd()
+	public void testfact()
 	{
 		App app= new App();
-		int result=app.add(2, 3);
-		System.out.println("Running :2+3"+result);
-		Assert.assertEquals(5, result);
+		int result=app.fact(3);
+		System.out.println("Test Result"+result);
+		Assert.assertEquals(6, result);
 	}
- 
+	@Test 
+	public void testfact1()
+	{
+		App app= new App();
+		int result=app.fact(4);
+		System.out.println("Test Result"+result);
+		Assert.assertEquals(24, result);
+	}
 }
